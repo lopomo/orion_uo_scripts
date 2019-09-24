@@ -1,0 +1,23 @@
+{
+  "name": "orion-uo-types",
+  "version": "1.0.0",
+  "description": "Type definitions for OrionUO workflow",
+  "main": "index.js",
+  "scripts": {
+	"build": "tsc",
+	"watch": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lopomo/orion_uo_types.git"
+  },
+  "author": "Radko Vitez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lopomo/orion_uo_types/issues"
+  },
+  "homepage": "https://github.com/lopomo/orion_uo_types#readme",
+  "dependencies": {
+    "typescript": "^3.6.3"
+  }
+}
