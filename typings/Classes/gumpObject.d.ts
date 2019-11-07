@@ -103,10 +103,10 @@
 	* Selects gump by a hook object (GumpHookObject).
 	* Returns true if successfull.
 	*/
-	Select(hook: GumpHookObject): boolean;	
+	Select(hook: GumpHookObject): boolean;
 
 	/**
 	* void gump.Close();
 	*/
-	Close(): void	
+	Close(): void;
 }

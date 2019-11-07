@@ -30,7 +30,7 @@ declare global {
 	const Player: PlayerCharacter;
 }
 
-interface OrionStatic extends 
+interface OrionStatic extends
 	CharacterMovement,
 	ClientMacro,
 	ClientOptions,

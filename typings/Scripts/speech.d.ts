@@ -6,7 +6,7 @@ export default interface Speech {
 	* @param color - message color.
 	* @param text - message text.
 	*/
-	Print(color: string, text: string): void;
+	Print(color: string | number, text: string): void;
 
 	/**
 	* void Orion.CharPrint('serial', 'color', 'text');
@@ -15,7 +15,7 @@ export default interface Speech {
 	* @param color - message color.
 	* @param text - message text.
 	*/
-	CharPrint(serial: string, color: string, text: string): void;
+	CharPrint(serial: string, color: string | number, text: string): void;
 
 	/**
 	* void Orion.Say('text');
@@ -29,7 +29,7 @@ export default interface Speech {
 	* @param state - can be either true or false.
 	* @param color - message color.
 	*/
-	SetFontColor(state: boolean, color?: string): void;
+	SetFontColor(state: boolean, color?: string | number): void;
 
 	/**
 	* bool Orion.GetFontColor();
@@ -49,7 +49,7 @@ export default interface Speech {
 	* @param state - can be either true or false.
 	* @param color - message color.
 	*/
-	SetCharactersFontColor(state: boolean, color?: string): void;	
+	SetCharactersFontColor(state: boolean, color?: string | number): void;	
 
 	/**
 	* bool Orion.GetCharactersFontColor();

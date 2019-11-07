@@ -7,7 +7,7 @@
      * @param container - The container in which the search is performed.
      * @param recurse - Recursive search for sub-containers.
      */
-	UseType(graphic: string, color?: string, container?: string, recurse?: boolean): void;
+	UseType(graphic: string | number, color?: string | number, container?: string, recurse?: boolean): void;
 
 	/**
 	* void Orion.UseFromGround('graphic', ['color'=0xFFFF], ['distance'=useObjectsDistance], ['flags']);
@@ -17,7 +17,7 @@
 	* @param distance - The search distance.
 	* @param flags - Search filter flags.
 	*/
-	UseFromGround(graphic: string, color?: string, distance?: number | string, flags?: string): void;
+	UseFromGround(graphic: string | number, color?: string | number, distance?: number | string, flags?: string): void;
 
 	/**
 	* bool Orion.UseTypeList('listName', ['container'=self], [recurse=true]);
@@ -51,7 +51,7 @@
 	* @param recurse - Recursive search for sub-containers.
 	* Result: List of found serials.
 	*/
-	FindType(graphic: string, color?: string, container?: string, flags?: string, distance?: number | string, notoriety?: string, recurse?: boolean): Array<string> | null;	
+	FindType(graphic: string | number, color?: string | number, container?: string, flags?: string, distance?: number | string, notoriety?: string, recurse?: boolean): Array<string> | null;	
 
 	/**
 	* void Orion.Ignore('serial', [state=true]);
@@ -81,7 +81,7 @@
 	* @param recurse - Recursive search for sub-containers.
 	* @param Result: the amount of items.
 	*/
-	Count(graphic: string, color?: string, container?: string, distance?: number | string, recurse?: boolean): number;
+	Count(graphic: string | number, color?: string | number, container?: string, distance?: number | string, recurse?: boolean): number;
 
 	/**
 	* void Orion.ResetIgnoreList();

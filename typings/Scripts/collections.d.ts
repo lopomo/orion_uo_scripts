@@ -31,7 +31,7 @@ export default interface Collections {
 	* @param color - object color.
 	* @param comment - a comment, which will be displayed in the list.
 	*/
-	AddFindList(listName?: string, graphic?: string, color?: string, comment?: string);
+	AddFindList(listName?: string, graphic?: string | number, color?: string | number, comment?: string);
 
 	/**
 	* void Orion.ClearFindList('listName');
@@ -57,7 +57,7 @@ export default interface Collections {
 	* @param color- object color.
 	* @param comment - a comment, which will be displayed in the list.
 	*/
-	AddIgnoreList(listName?: string, graphic?: string, color?: string, comment?: string): void;
+	AddIgnoreList(listName?: string, graphic?: string | number, color?: string | number, comment?: string): void;
 
 	/**
 	* void Orion.ClearIgnoreList('listName');

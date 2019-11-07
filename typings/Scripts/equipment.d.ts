@@ -78,5 +78,5 @@ export default interface Equipment {
 	* void Orion.EquipT('graphic', ['color'=0xFFFF]);
 	* Find the item in the character backpack/sub-packs and bags with the type "graphic" and "color" (if required) and dress them.
 	*/
-	EquipT(graphic: string, color?: string): void;
+	EquipT(graphic: string | number, color?: string | number): void;
 }

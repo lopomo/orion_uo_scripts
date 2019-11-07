@@ -1,5 +1,11 @@
 export default interface NonCategorized {
 	/**
+	* void Orion.CancelTarget();
+	* Cancel Target
+	*/
+	CancelTarget(): void;
+
+	/**
 	* void Orion.SaveConfig();
 	* Save configuration.
 	*/
@@ -95,7 +101,7 @@ export default interface NonCategorized {
 	* Change character body graphic.
 	* Without parameters or 0 - returns body to its original state.
 	*/
-	Morph(graphic?: string): void;
+	Morph(graphic?: string | number): void;
 
 	/**
 	* void Orion.Resend();
@@ -122,7 +128,7 @@ export default interface NonCategorized {
 	* @param color - message color.
 	* @param text - text.
 	*/
-	Print(color: string, text: string): void;
+	Print(color: string | number, text: string): void;
 
 	/**
 	* void Orion.CharPrint('serial', 'color', 'text');
@@ -131,7 +137,7 @@ export default interface NonCategorized {
 	* @param color - message color.
 	* @param text - text.
 	*/
-	CharPrint(serial: string, color: string, text: string): void;
+	CharPrint(serial: string, color: string | number, text: string): void;
 
 	/**
 	* void Orion.Say('text');
@@ -152,7 +158,7 @@ export default interface NonCategorized {
 	* @param state - true/false.
 	* @param color - text color.
 	*/
-	SetFontColor(state: boolean, color?: string): void;
+	SetFontColor(state: boolean, color?: string | number): void;
 
 	/**
 	* bool Orion.GetFontColor();
@@ -174,7 +180,7 @@ export default interface NonCategorized {
 	* @param state - true/false.
 	* @param color - text color.
 	*/
-	SetCharactersFontColor(state: boolean, color?: string): void;
+	SetCharactersFontColor(state: boolean, color?: string | number): void;
 
 	/**
 	* bool Orion.GetCharactersFontColor();

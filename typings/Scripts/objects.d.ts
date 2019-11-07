@@ -25,7 +25,7 @@ export default interface Objects {
 	* Return real value of "graphic".
 	* For instance: Orion.GetGraphic('bm') - will return type of blood moss, stated in Lists/Types
 	*/
-	GetGraphic(graphic: string): string;
+	GetGraphic(graphic: string | number): string;
 
 	/**
 	* String Orion.GetContainer('serial');

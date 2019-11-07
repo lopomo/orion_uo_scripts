@@ -21,7 +21,7 @@ export default interface Targeting {
 	* @param flags - Flag Search Filters.
 	* @param recurse - Recursive Search in subcontainers.
 	*/
-	WaitTargetType(graphic: string, color?: string, container?: string, flags?: string, recurse?: boolean): void;
+	WaitTargetType(graphic: string | number, color?: string | number, container?: string, flags?: string, recurse?: boolean): void;
 
 	/**
 	* void Orion.WaitTargetGround('graphic', ['color'=0xFFFF], ['distance'=searchObjectsDistance], ['flags']);
@@ -31,7 +31,7 @@ export default interface Targeting {
 	* @param distance - Search Distance.
 	* @param flags - Flag Search Filters.
 	*/
-	WaitTargetGround(graphic: string, color?: string, distance?: string, flags?: string): void;
+	WaitTargetGround(graphic: string | number, color?: string | number, distance?: string, flags?: string): void;
 
 	/**
 	* void Orion.WaitTargetTypeList('findListName', ['container'=self], ['flags'], [recurse=true]);
@@ -60,7 +60,7 @@ export default interface Targeting {
 	* @param y - World Y coordinate
 	* @param z - World Z coordinate
 	*/
-	WaitTargetTile(graphic: string, x, y, z): void;
+	WaitTargetTile(graphic: string | number, x, y, z): void;
 
 	/**
 	* void Orion.WaitTargetTileRelative('graphic', [x, y, z]);
@@ -70,7 +70,7 @@ export default interface Targeting {
 	* @param y - Y coordinate bias in the world
 	* @param z - Z coordinate bias in the world
 	*/
-	WaitTargetTileRelative(graphic: string, x, y, z): void;
+	WaitTargetTileRelative(graphic: string | number, x, y, z): void;
 
 	/**
 	* void Orion.CancelWaitTarget();
@@ -93,7 +93,7 @@ export default interface Targeting {
 	* @param flags - Flag Search Filters.
 	* @param recurse - Recursive Search in subcontainers.
 	*/
-	TargetType(graphic: string, color?: string, container?: string, flags?: string, recurse?: boolean): void;
+	TargetType(graphic: string | number, color?: string | number, container?: string, flags?: string, recurse?: boolean): void;
 
 	/**
 	* void Orion.TargetGround('graphic', ['color'=0xFFFF], ['distance'=searchObjectsDistance], ['flags']);
@@ -103,7 +103,7 @@ export default interface Targeting {
 	* @param distance - Search Distance.
 	* @param flags - Flag Search Filters.
 	*/
-	TargetGround(graphic: string, color?: string, distance?: string, flags?: string): void;
+	TargetGround(graphic: string | number, color?: string | number, distance?: string, flags?: string): void;
 
 	/**
 	* void Orion.TargetTypeList('findListName', ['container'=self], ['flags'], [recurse=true]);
@@ -132,7 +132,7 @@ export default interface Targeting {
 	* @param y - World Y coordinate
 	* @param z - World Z coordinate
 	*/
-	TargetTile(graphic: string, x, y, z): void;
+	TargetTile(graphic: string | number, x, y, z): void;
 
 	/**
 	* void Orion.TargetTileRelative('graphic', [x, y, z]);
@@ -142,7 +142,7 @@ export default interface Targeting {
 	* @param y - Y coordinate bias in the world
 	* @param z - Z coordinate bias in the world
 	*/
-	TargetTileRelative(graphic: string, x, y, z): void;
+	TargetTileRelative(graphic: string | number, x, y, z): void;
 
 	/**
 	* bool Orion.ValidateTargetTile('graphicOrFlags', x, y);

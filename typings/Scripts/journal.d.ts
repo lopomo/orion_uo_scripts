@@ -10,7 +10,7 @@ export default interface Journal {
 	* Clear the journal.
 	* Without parameters - clears the whole journal of the assistant; Otherwise it works similarly to InJournal but including deletion.
 	*/
-	ClearJournal(pattern?: string, flags?: string, serial?: string, color?: string): void;
+	ClearJournal(pattern?: string, flags?: string, serial?: string, color?: string | number): void;
 
 	/**
 	* void Orion.JournalIgnoreCase([state=false]);
@@ -29,7 +29,7 @@ export default interface Journal {
 	* @param endTime - the end time of the search. 0 the end time is ignored
 	* Result: object of the type JournalMessage or null if nothing was found.
 	*/
-	InJournal(pattern: string, flags?: string, serial?: string, color?: string, startTime?: number, endTime?: number): JournalMessage;
+	InJournal(pattern: string, flags?: string, serial?: string, color?: string | number, startTime?: number, endTime?: number): JournalMessage;
 
 	/**
 	* JournalMessage Orion.WaitJournal('pattern', startTime, endTime, [flags], ['serial'=0], ['color'=0xFFFF]);
@@ -42,7 +42,7 @@ export default interface Journal {
 	* @param color - search for messages with the specified color. 0xFFFF ignores the filter by color.
 	* Result: object of the type JournalMessage or null if nothing was found.
 	*/
-	WaitJournal(pattern: string, startTime: number, endTime: number, flags?: string, serial?: string, color?: string): JournalMessage;
+	WaitJournal(pattern: string, startTime: number, endTime: number, flags?: string, serial?: string, color?: string | number): JournalMessage;
 
 	/**
 	* JournalMessage Orion.LastJournalMessage();

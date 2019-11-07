@@ -10,7 +10,7 @@ export default interface Timers {
 	* void Orion.SetTimer('name', [delay=0]);
 	* Create/Change timer with 'delay' as initial value. Default is 0.
 	*/
-	SetTimer(name: string, delay: number): void;
+	SetTimer(name: string, delay?: number): void;
 
 	/**
 	* int Orion.Timer('name');
