@@ -10,9 +10,6 @@ namespace Scripts {
 			{ Name: 'Cure', Graphic: '0x0F07', Color: '0x0000' },
 			{ Name: 'Refresh', Graphic: '0x0F0B', Color: '0x0000' }
 		];
-		public EmptyContainer() {
-
-		}
 
 		public MovePotions() {
 			let startY = 10;
