@@ -1,8 +1,15 @@
 namespace Scripts {
 	export class Executable {
-		static MovePotions() {
-			const cleaner = new Utility();
-			cleaner.MovePotions();
+		// Static scoped
+		// Hotkey usage: Scripts.Executable.PrintTest();
+		static PrintTest() {
+			new Utility().test();
 		}
 	}
+}
+
+// OR public function
+// Hotkey usage: PrintTest();
+function PrintTest() {
+	new Scripts.Utility().test();
 }
